@@ -25,6 +25,20 @@
     font-size: 1.6rem;
     font-style: italic;
   }
+
+  .repo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem 0;
+    padding: 1rem;
+  }
+
+  .avatar img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+  }
 </style>
 
 <body>
@@ -56,6 +70,9 @@
       <a href="https://instagram.com/sudip_bhr" target="blank"><img align="center" src="images/instagram.png"
           alt="sudip_bhr" height="40" width="40" /></a>&nbsp; &nbsp;
     </p>
+    <div class="repos">
+
+    </div>
     <div class="container stats">
       <iframe src="https://github-readme-stats.vercel.app/api?username=sudipbhr&theme=algolia&show_icons=true"
         frameborder="0" width="100%"></iframe>
@@ -68,5 +85,36 @@
     <iframe src="" frameborder="0"></iframe>
   </div>
 </body>
+<script>
+  // var url = "https://api.github.com/users/sudipbhr/repos";
+  //get the data from the api
+  fetch(url)
+    .then((response) => response.json())
+    .then((data) => {
+      for (index in data) {
+        var repo = data[index].full_name;
+        var link = data[index].html_url;
+        var description = data[index].description;
+        var avatar = data[index].owner.avatar_url;
+        //create a new div element for each repo and append it to the container div element 
+        var container = document.querySelector(".repos");
+        var newDiv = document.createElement("div");
+        newDiv.classList.add("repo");
+        newDiv.innerHTML = `
+        <div class="repo">
+          <div class="avatar">
+            <img src="${avatar}" alt="avatar">
+          </div>
+          <div class="info">
+            <h3>${repo}</h3>
+            <p>${description}</p>
+            <a href="${link}" target="blank">View Repo</a>
+          </div>
+        </div>
+        `;
+        container.appendChild(newDiv);
+      }
+    })
+</script>
 
 </html>
