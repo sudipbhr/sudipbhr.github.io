@@ -37,6 +37,11 @@
     <meta name="twitter:url" content="https://sudipbhandari.netlify.app">
     <meta name="twitter:image" content="https://avatars.githubusercontent.com/u/50023508?v=4">
     <meta name="twitter:description" content="Sudip Bhandari | Software Developer">
+
+
+   
+
+
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="icon" href="portfolio.png">
     <link rel="stylesheet" href="style.css">
@@ -52,7 +57,7 @@
                 <h1 id="user-name">Sudip Bhandari</h1>
                 <p id="bio">
 
-                    🚀 Software Developer &nbsp; &nbsp; 🌐 REST API <br>
+                    🚀 Software Developer &nbsp; &nbsp; 🌐 REST API Development <br>
                     <br>
 
                     🖥️ Server Management &nbsp; &nbsp; 🏃 Progressive
@@ -63,11 +68,11 @@
                 <p id="email">Email: 📨 <i id="email-text">[Click to copy]</i></p>
             </div>
         </section>
- 	<div class="line-break"></div>
+
         <section class="section--page">
 
             <div id="socials--list">
- 		<a href="https://blogs.bhandarisudip.com.np/" target="_blank">Blog</a>
+PublicMediaStorage
                 <a href="https://github.com/sudipbhr" target="_blank">Github</a>
                 <a href="https://www.linkedin.com/in/sudipbhr57/" target="_blank">Linkedin</a>
                 <a href="https://www.facebook.com/sudipbhr" target="_blank">Facebook</a>
@@ -75,7 +80,7 @@
                 <a href="cv_sudip_bhandari.pdf" target="_blank">Download Resume</a>
             </div>
         </section>
-	 <div class="line-break"></div>
+
         <section class="section--page">
             <h2>Skills & Qualifications</h2>
             <ul id="qualifications--list">
